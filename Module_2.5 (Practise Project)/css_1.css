@@ -1,0 +1,422 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.banner {
+
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.banner_container::before {
+    content: '';
+    position: absolute;
+
+
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    /* Adjust the opacity to control the darkness */
+    /* z-index: 1; */
+}
+
+
+.bg_size {
+    height: 100%;
+    width: 100%;
+
+    filter: contrast(1);
+    object-fit: cover;
+    color: #D68D53;
+
+
+}
+
+.nav_text {
+    color: #e76000;
+    top: 20px;
+    left: 20px;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+
+
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    gap: 60px;
+
+}
+
+
+
+.nav_bar {
+    position: absolute;
+    top: 20px;
+    left: 45%;
+    padding: 30px;
+
+}
+
+.pic {
+    position: absolute;
+    top: 50px;
+    left: 13%;
+
+
+}
+
+.picture {
+    width: 70px;
+    height: auto;
+
+}
+
+.left {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    padding-top: 22%;
+    padding-left: 12%;
+    align-items: center;
+
+}
+
+.banner_title {
+    color: orangered;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 28px;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vesper+Libre:wght@400;500;700;900&display=swap');
+
+.banner_title_2 {
+    color: white;
+    align-items: center;
+    font-size: 65px;
+    padding-top: 10px;
+    font-style: italic;
+
+}
+
+.content {
+    text-align: center;
+
+}
+
+.btn {
+
+    padding: 15px 30px;
+    margin-top: 7px;
+    background-color: orangered;
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    border-color: #e76000;
+    border-radius: 11px;
+
+
+}
+
+.image_add {
+    display: flex;
+    width: 80%;
+    align-content: center;
+
+    gap: 100px;
+
+    padding: 20px 25px;
+
+}
+
+.image_add img {
+    width: 130px;
+    height: 140px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo_part {
+    margin-left: 100px;
+    background-color: rgb(236, 236, 236);
+    padding-top: 35px;
+    margin-right: 100px;
+    border-radius: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our_services {
+    display: flex;
+    justify-content: center;
+    padding: 45px;
+}
+
+.head_description {
+    align-items: center;
+
+}
+
+.service_title {
+    font-size: 60px;
+    text-align: center;
+    color: #1E2125;
+}
+
+.underline_picture {
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    display: block;
+    padding: 10px;
+
+
+
+}
+
+.para_graph {
+    text-align: center;
+    font-size: 25px;
+    width: 880px;
+}
+
+.photo_24 {
+    width: 100px;
+    padding: 20px;
+}
+
+.square_box {
+    width: 380px;
+
+    text-align: center;
+    align-items: center;
+    border: 2px solid rgb(170, 170, 170);
+    align-content: center;
+    padding: 15px;
+    box-shadow: 5px 5px 12px gray;
+
+}
+
+.para_graph_net_security {
+    font-size: 25px;
+    font-style: normal;
+    line-height: 35px;
+}
+
+.boder_line {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+}
+
+.network_security {
+    font-size: 32px;
+}
+
+.first_three {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 85px;
+    row-gap: 85px;
+
+}
+
+.second_three_box {
+    display: flex;
+    justify-content: space-evenly;
+    row-gap: 85px;
+}
+
+.left_police {
+    padding-left: 100px;
+}
+
+.police_calling {
+    width: 780px;
+    
+}
+
+.before_fotter {
+    display: flex;
+    margin-top: 140px;
+    margin-bottom: 0px;
+
+
+}
+
+.orange_text {
+    color: orange;
+    font-size: 60px;
+}
+
+.black_text {
+    color: black;
+    font-size: 60px;
+}
+
+.btn_indigo {
+    padding: 14px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #5be4ff;
+    border-radius: 10px;
+    border-color: #35c4e0;
+    text-align: center;
+    font-size: 22px;
+    background-color: #27A8C2;
+}
+
+.black_paragraph {
+    text-align: left;
+    font-size: 25px;
+    opacity: 0.7;
+    width: 80%;
+    padding-top: 15px;
+}
+
+.free_consaltation {
+    display: flex;
+}
+
+.get_free_call_image {
+    width: 110px;
+    padding-top: 40px;
+}
+
+.consultation_text {
+    padding-left: 40px;
+    padding-top: 65px;
+    font-size: 50px;
+}
+
+.text_header {
+    font-size: 30px;
+    padding-left: 15px;
+    color: #f77409;
+}
+
+.twenty_four {
+    width: 50px;
+}
+
+.image_and_header {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.para_graph_footer {
+    font-size: 25px;
+    line-break: 15px;
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+
+}
+
+.security_manager {
+
+    width: 400px;
+    padding-left: 30px;
+    align-content: center;
+    align-items: center;
+}
+
+.text_header_2 {
+    padding-left: 40px;
+    font-size: 30px;
+    color: #f77409;
+}
+
+.forms {
+    width: 280px;
+    height: 55px;
+    margin-left: 40px;
+
+}
+
+::placeholder {
+    font-size: 22px;
+    text-align: center;
+}
+
+.footer_part{
+    margin: 100px;
+}
+.learn_more_image{
+    width: 190px;
+    filter: contrast(1.75);
+    height: 25px;
+    padding: 10PX;
+}
+
+.head_learn_more{
+    font-size:38px;
+    padding-left: 5PX;
+    text-align: center;
+    color: white;
+
+}
+
+.unorder_list{
+    font-size:27px;
+    align-content: center;
+    list-style: circle;
+    padding-left: 30PX;
+    color: white;
+    
+    
+}
+
+.footer_part{
+    display: flex;
+}
+
+.learn_more_part{
+    padding: 35PX;
+    text-align: center;
+}
+
+.black_colorr{
+    color: white;
+}
+
+.first_color{
+    color: #f77409;
+}
+
+.office_address{
+    font-size: 25px;
+    width: 405px;
+    display: flex;
+}
+
+.back_image{
+    width: 300vh;
+    height:450px;
+    border: #131313;
+    background-color:#131313f5;
+    
+
+    
+}
+
+.para_graph_footer{
+  color: white;
+}
