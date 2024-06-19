@@ -1,2 +1,0 @@
-
-https://openapi.programming-hero.com/api/course/curriculum
