@@ -1,0 +1,77 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: calc(100% - 70px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#foodResults {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.foodItem {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.foodItem img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+ /* styles.css */
+
+/* Add this at the end of your CSS file */
+/* styles.css */
+
+.detailBar {
+    display: none;
+    width: 50%; /* Set the width to 50% of the page */
+    margin: 0 auto; /* Center the banner horizontally */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}

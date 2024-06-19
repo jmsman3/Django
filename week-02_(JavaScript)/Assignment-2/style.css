@@ -1,0 +1,296 @@
+body {
+    background-color: rgb(141, 247, 255);
+    margin: 0;
+    padding: 0;
+}
+
+#input-form-here {
+    width: 50em;
+    height: 2.6em;
+    border-radius: 5px;
+}
+
+.input-and-search-Bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-and-count-container {
+    display: flex;
+}
+
+.left-container {
+    width: 1000px;
+    box-shadow: 5px 5px 10px rgb(71, 65, 85);
+    border-radius: 20px;
+    margin: 6px;
+    text-align: center;
+    background-color: #f3beba;
+    height: auto;
+    border-color: rgb(63, 0, 122);
+    padding: 10px;
+    /* display: flex; */
+    /* flex-direction: row; */
+    display: grid;
+    grid-template-columns: 333px 333px 333px;
+    /* grid-template-columns: auto auto auto auto; */
+
+}
+
+.btn-Detail {
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.detail-barr {
+    width: 40%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e0daa3;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(66, 47, 47);
+    text-align: center;
+    color: #000000;
+    display: none;
+
+}
+
+.cart-container {
+    width: 40%;
+    box-shadow: 4px 4px 8px gray;
+    margin: auto;
+    text-align: center;
+}
+
+.right-container {
+    width: 420px;
+    height: auto;
+    /* position: fixed; */
+    top: 20%;
+    /* Adjust as needed */
+    right: 0;
+    /* Align to the right side */
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 5px 5px 10px rgb(71, 65, 85);
+}
+
+.atletitem {
+    width: 300px;
+    height: auto;
+    background-color: #f87c73;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    font-size: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.social-links a:hover {
+    color: #000;
+}
+
+.atletitem p {
+    font-weight: bold;
+    text-align: left;
+}
+
+.btn-flex-make {
+    display: flex;
+    justify-content: space-between;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #111111;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #222222;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.copyright-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+    padding: 20px;
+    color: #999999;
+}
+
+.copyright-footer p a {
+    color: #e91e63;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+@media(max-width: 767px) {
+
+    #input-form-here {
+       width: 50%;
+       margin-bottom: 30px;
+    }
+
+}
+
+
+
+
+#sportsmanimgid {
+    width: 250px;
+    border-radius: 15px;
+}
+
+button {
+    --color: #0077ff;
+    font-family: inherit;
+    display: inline-block;
+    width: 6em;
+    height: 2.4em;
+    line-height: 2em;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 17px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 6px;
+    position: relative;
+    font-weight: bold;
+}
+
+button::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+button:hover {
+    color: white;
+}
+
+button:before {
+    top: 100%;
+    left: 100%;
+    transition: 0.3s all;
+}
+
+button:hover::before {
+    top: -30px;
+    left: -30px;
+}
