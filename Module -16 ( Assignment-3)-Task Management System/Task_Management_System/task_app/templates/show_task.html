@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+ {% block content %}
+ 
+<div class="d-flex flex-wrap justify-content-center px-5 pt-5" style="background-color:aqua;">
+  {% for post in data %}
+  <div class="col-sm-3 ">
+    <div class="card m-2 " >
+      <div class="card-body" >
+        <h4 class="card-title">{{post.title}}</h4>
+        <p class="card-text"> <strong>Post id:</strong> {{post.id}}</p>
+        <p class="card-text"><strong>Description </strong>: {{post.description}}</p>
+        <p class="card-text"><strong>Assign Date</strong> : {{post.Task_Assign_Date}}</p>
+        <p>
+          <strong>Task Categories</strong> : {% for cat in post.Catagories.all %} 
+          <button class="btn btn-primary btn-sm m-2" disabled >{{cat.Category_Name}} </button>
+          {% endfor %}
+        </p>
+        {% if post.is_Completed %}
+      
+        <div style="display: flex; justify-content: center;">
+          <button type="submit" class="btn btn-success w-100 disabled" style="margin: auto;"> Completed</button> </div>
+      
+        {% else %}
+        <div class="d-flex justify-content-center gap-1 ">
+          <a href="{% url 'EditPage' post.id %}" class="btn btn-warning">Edit</a> <br>
+        <a href="{% url 'delete_post' post.id %}" class="btn btn-danger ">Delete</a>
+        </div>
+        {% endif %}
+      
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
