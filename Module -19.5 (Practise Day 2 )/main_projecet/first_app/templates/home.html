@@ -1,0 +1,31 @@
+{% extends "base.html" %} {% load crispy_forms_tags %} {% block content %}
+<h1 style="text-align: center;">'This is Home Page'</h1>
+<table class="table table-bordered border-primary  table-hover table-striped ">
+  <thead>
+    <tr>    
+      <th scope="col">id</th>
+      <th scope="col">Musician Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Album Rating</th>
+      <th scope="col">Instrument Type</th>
+      <th scope="col">Album Name</th>
+      <th scope="col">Release Date</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    {% for i in data %} {% csrf_token %}
+    <tr>     
+      <th scope="row">{{i.id}}</th>
+      <td>{{i.musician.first_name}} {{i.musician.last_name}} </td>
+      <td>{{i.musician.email}}</td>
+      <td>{{i.rating}}</td>
+      <td>{{i.musician.instrument}}</td>
+      <td>{{i.album_name }}</td>
+      <td>{{i.album_release_date }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock content %}
