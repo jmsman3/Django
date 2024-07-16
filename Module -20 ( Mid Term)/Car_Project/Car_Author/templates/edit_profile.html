@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+
+<form method="POST"  style="width: 50%; margin: auto;" novalidate>
+    {% csrf_token %}
+    <h1>This is Update Profile Page</h1>
+   
+    <small> <b>You can also update your Password    </b><a href="{% url 'password_change' %}" class="btn btn-warning" >Change Password</a></small>
+    <br>
+    <!-- {{form | crispy }} -->
+
+    {% for fm in form %}
+    {{fm.label_tag}}
+    {{fm}}
+    {{fm.errors | striptags }}
+    {% endfor %} 
+    <br>
+    <button type="submit" class="btn btn-primary">Update Profile</button> 
+    <small>Go to Your main Profile <a href="{% url 'profile' %}" class="btn btn-success">Profile</a></small>
+</form>
+
+
+{% endblock content %}

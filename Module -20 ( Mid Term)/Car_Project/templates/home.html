@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="d-flex flex-wrap px-5 pt-3 align-items-center">
+
+  <div class="col-5">
+    <h1>Welcome to CarBazar</h1>
+    Tesla, Inc., founded in 2003, is an American electric vehicle and clean energy company renowned for its
+    high-performance electric cars and innovative technology. Key models include the luxury Model S sedan, the
+    affordable Model 3 sedan, the spacious Model X SUV with distinctive Falcon Wing doors, and the versatile Model Y
+    compact SUV. These vehicles are known for their impressive range, acceleration, advanced features, and stylish
+    design, making Tesla a leader in the electric vehicle market.Key models include the luxury Model S sedan, the
+    affordable Model 3 sedan, the spacious Model X SUV with distinctive Falcon Wing doors, and the versatile Model Y
+    compact SUV. These vehicles are known for their impressive range, acceleration, advanced features, and stylish
+    design, making Tesla a leader in the electric vehicle market.Key models include the luxury Model S sedan, the
+    affordable Model 3 sedan, the spacious Model X SUV with distinctive Falcon Wing doors, and the versatile Model Y
+    compact SUV. These vehicles are known for their impressive range, acceleration, advanced features, and stylish
+    design, making Tesla a leader in the electric vehicle market.
+  </div>
+
+  <div class="col-7">
+    <img src="{% static  'dual.jpg' %}" alt="" style="width: 100%; border-radius: 5px;">
+  </div>
+
+</div>
+
+<!-- --------------------------------------------------------------------------------------------- -->
+
+<div class="col-12 bg-white mx-auto p-4 px-3" style="width: 95%; margin-top: 10px; border-radius: 5px;">
+
+  <div class="d-flex flex-wrap">
+
+    <a href="{% url 'home' %}" class="text-decoration-none d-inline-block text-center mb-3 btn btn-outline-success">All
+      Categories</a>
+    {% for cat in category%}
+    <div class="form-check mx-3">
+      <input class="form-check-input" type="radio" name="category" id="{{cat.id}}">
+      <label class="form-check-label" for="{{cat.id}}">
+        <a href="{% url 'category_wise_post' cat.slug %}" class="text-decoration-none text-dark btn btn-warning "
+          type="button"> {{cat.name}}</a>
+      </label>
+    </div>
+    {% endfor %}
+  </div>
+
+</div>
+
+
+
+
+<div class="d-flex flex-wrap p-4">
+
+
+
+  <div class="col-12 p-3">
+    <h2 class="text-dark text-center "> Total:- {{data | length}} results found</h2>
+    <div class="d-flex flex-wrap   pt-3 ">
+      {% for post in data %}
+      <div class="col-sm-3 ">
+        <div class="card mx-2 mt-3">
+          <div class="card-body">
+            <img src="{{ post.image.url }}" class="card-img-top" alt="..." />
+            <p class="card-title"><b>Car Name -</b> {{post.title}}</p>
+            <p class="card-text"><b>Car Price -</b> {{post.price}}</p>
+            <p class="card-text"><b>Quantity - </b>{{post.quantity}}</p>
+            <p class="card-text"><b>Car Detail-</b> {{post.description | truncatewords:5 }}</p>
+            <p><b>Brand:</b>
+              <button class="btn btn-primary btn-sm m-2" disabled> {{post.brand.name}} </button>
+            </p>
+
+            {% if user.is_authenticated %}
+            <p>See More - <a href="{% url 'detail' post.id %}" type="submit"
+                class="btn btn-outline-success me-2 text-dark">View Detail</a></p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
+<!-- --------------------------------------------------------------------------------------------- -->
+
+{% endblock content %}
