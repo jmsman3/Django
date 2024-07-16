@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+{% block content %}
+<br>
+{% if messages %}
+{% for m in messages %}
+<small class="btn btn-success">{{m}}</small>
+{% endfor %}
+{% endif %}
+
+
+<form method="POST" style="width: 50%; margin: auto;" novalidate>
+    <h1>This is Login Page</h1>
+    
+    {% if form.non_field_errors %}
+    {% for er  in form.non_field_errors %}
+      <p class="bg-danger text-white p-3">{{er}}</p>
+    {% endfor %}
+    {% endif %}
+
+    
+    {% csrf_token %}
+    <!-- {{form | crispy }} -->
+     {% for fm in form %}
+     {{ fm.label_tag }}
+     {{ fm }}
+     {{fm.errors | striptags }}
+     {% endfor %}
+     <br>
+    <button type="submit" class="btn btn-primary">Login </button>
+</form>
+{% endblock content %}
